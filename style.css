@@ -1,0 +1,66 @@
+body {
+    background-color: #212123;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.canvas-container {
+    width: 100%;
+    width: 400px;
+    max-width: 400px;
+    /*width: fit-content;*/
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /*outline: 2px solid red;*/
+}
+
+.canvas-container > * {
+    display: block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+}
+
+#leaf-cnv {
+    z-index: 2;
+    position: absolute;
+    /*outline: 2px solid green;*/
+    /*display: none;*/
+    /*opacity: 0;*/
+}
+
+#sound-cnv {
+    z-index: 1;
+    position: absolute;
+    /*display: none;*/
+}
+
+.svg-leaf {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #343460;
+    fill: white;
+    stroke: white;
+    visibility: hidden;
+    /*position: absolute;*/
+    /*z-index: -1;*/
+    pointer-events: none;
+    /*outline: 2px solid yellow;*/
+}
+
+.start-music-btn {
+    position: absolute;
+    z-index: 5;
+}
